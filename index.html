@@ -5,48 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Retrouvez toutes mes réalisations sur mon portfolio. J'y décris aussi mes compétences et mes soft skills">
-    <meta name="author" content="mettre mon nom">
     <title>Mettre mon nom | Portfolio</title>
 </head>
 <body>
     <header>
-        <img src="medias/profile.png" width="50px">
+        <img src="medias/profile.png" width="100px" alt="photo de profile">
         <nav>
             <ul>
-                <li>Réalisations</li>
-                <li>Compétences</li>
-                <li>Contact</li>
+                <li>
+                    <a href="#realisation">Réalisations</a>
+                </li>
+                <li>
+                    <a href="#competences">Compétences</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
         <h1>Bienvenue sur mon portfolio</h1>
         <h2>Je suis <strong>"mettre mon nom"</strong> - "mon poste ou ma spécialité"</h2>
-        <h3>Mes réalisations</h3>
+        <p>Voici un paragraphe qui décrit qui je suis.</p>
+        <h3 id="realisations">Mes réalisations</h3>
+        <div>
+            <h4>Première réalisation</h4>
+            <img src="medias/realisations.jpeg" width="150px" alt="realisations">
+            <h4>Deuxième réalisation</h4>
+            <img src="medias/competences.jpeg" width="150px" alt="realisations">
+        </div>
 
-        <h3>Mes compétences</h3>
+        <h3 id="competences">Mes compétences</h3>
+        <ul>
+            <li>Ma première compétence</li>
+            <li>Ma deuxième compétence</li>
+            <li>Ma troisième compétence</li>
+        </ul>
         
         <aside>
-            <h2>Hobbies</h2>
+            <h4>Hobbies</h4>
             <ol>
                 <li>Mon premier hobbie</li>
                 <li>Mon deuxième hobbie</li>
                 <li>Mon troisième hobbie</li>
             </ol>
         </aside>
-        <h2>Me contacter</h2>
-        <h3>Adresse postale</h3>
+        <h3 id="contact">Me contacter</h3>
+        <h4>Adresse postale</h4>
         <p>
-            "Mettre mon adresse" <br>
-            "Sur plusieurs lignes" <br>
-            "Avec des balises 'br'"
+            "3 rue des Sapins Fleuris" <br>
+            "Batiment C" <br>
+            "04560 LabelleVille 'br'"
         </p>
-        <h3>Adresse mail</h3>
-        <h3>Téléphone</h3>
+        <h4>Adresse mail</h4>
+        <a href="mailto:exemplemail@mail.com">exemplemail@mail.com</a>
+        <h4>Téléphone</h4>
+        <a href="tel:+336769117114">06769117114</a>
 
     </main>
     <footer>
         <p>Copyrigth - Mon nom</p>
+        <div>
+            <a href="#">
+                <img src="medias/instagram.png" alt="insta">
+            </a>
+            <a href="#">
+                <img src="medias/linkedin.png" alt="linkedin">
+            </a>
+            <a href="#">
+                <img src="medias/facebook.png" alt="facebook">
+            </a>
+            
+        </div>
     </footer>
     
 </body>
