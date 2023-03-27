@@ -23,13 +23,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 p, a {
   font-family: 'IBM Plex Mono', monospace;
+  color: rgb(180, 180, 180);
 }
 
 
 /* ---- Style de la page d'accueil ---- */
 
 header {
-  height: 700px;
+  height: 550px;
   background-color: #080808;
 }
 
@@ -43,13 +44,97 @@ nav.navbar {
 
 .nav-link {
   text-decoration: none;
+}
+
+.nomEtPhoto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.nomEtPhoto h1 {
   color: white;
 }
 
+.nomEtPhoto p {
+  max-width: 255px;
+  word-wrap: break-word;
+}
+
+.nomEtPhoto img {
+  border-radius: 50%;
+}
+
+.nomEtPhoto .btn {
+  background-color: #3F8E00;
+  color: white;
+}
+
+.sections {
+  margin-top: 80px;
+}
+
+.formations {
+  display: flex;
+  justify-content: space-around;
+  margin: 80px 0;
+}
+
+.formations .tag {
+  font-size: 0.8em;
+  padding: 2px 8px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.formations .tag1 {
+  display: inline;
+  color: orange;
+  background-color: rgba(253, 206, 119, 0.366);
+}
+
+.formations .tag2 {
+  display: inline;
+  color: blue;
+  background-color: rgba(101, 101, 246, 0.374);
+}
+
+.formations .tag3 {
+  display: inline;
+  color: green;
+  background-color: rgba(155, 218, 155, 0.349);
+}
+
+.formations p {
+  max-width: 295px;
+  word-wrap: break-word;
+}
+
+.formations .wrapper-images {
+  max-width: 420px;
+}
+
+.section-competences {
+  height: 550px;
+  background-color: #080808;
+}
+
+.section-competences .text-light {
+  margin: 80px 0;
+  border: 1px solid red;
+}
 
 
-@media screen and (max-width: 992px) {
-  
+@media screen and (max-width: 595px) {
+  .nomEtPhoto img {
+    display: none;
+  }
+
+  .nomEtPhoto {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 
