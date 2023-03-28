@@ -33,11 +33,6 @@ header {
   background-color: #080808;
 }
 
-div.container-fluid {
-  background: rgba(0, 0, 0, 0.9);
-  text-align: center;
-}
-
 nav.navbar {
   background-color: #2B2B2B;
   max-width: 80%;
@@ -47,7 +42,6 @@ nav.navbar {
 }
 
 .nomEtPhoto {
-  border: 1px solid red;
   display: flex;
   justify-content: space-around;
   margin-top: 90px;
@@ -71,10 +65,11 @@ nav.navbar {
   color: white;
 }
 
-/* --- section formation --- */
 .sections {
   margin-top: 80px;
 }
+
+/* --- section formation --- */
 
 .formations {
   display: flex;
@@ -151,7 +146,7 @@ nav.navbar {
   max-width: 380px;
 }
 
-@media (max-width: 595px) {
+@media (max-width: 768px) {
   .nomEtPhoto img {
     display: none;
   }
@@ -160,6 +155,57 @@ nav.navbar {
     flex-direction: column;
     text-align: center;
     align-items: center;
+  }
+
+  .formations {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0;
+  }
+
+  .formations p {
+    max-width: 360px;
+    word-wrap: break-word;
+  }
+  
+  .formations .wrapper-images {
+    max-width: 360px;
+  }
+
+  .formation2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .section-competences .text-center {
+    padding: 40px 0;
+  }
+
+  .section-competences {
+    height: fit-content;
+    padding-bottom: 40px;
+  }
+
+  .wrapper-competence {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .wrapper-competence .competences {
+    max-width: 360px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 992px) {
+  div.container-fluid {
+    background: #2B2B2B;
+    text-align: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
   }
 }
 
