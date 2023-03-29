@@ -60,57 +60,50 @@ nav.navbar {
   border-radius: 50%;
 }
 
-.nomEtPhoto .btn {
+.btn {
   background-color: #3F8E00;
   color: white;
 }
 
+footer,
 .sections {
   margin-top: 80px;
 }
 
 /* --- section formation --- */
-
 .formations {
   display: flex;
   justify-content: space-around;
   margin: 80px 0;
 }
-
 .formations .tag {
   font-size: 0.8em;
   padding: 2px 8px;
   margin-bottom: 20px;
   border-radius: 20px;
 }
-
 .formations .tag1 {
   display: inline;
   color: orange;
   background-color: rgba(253, 206, 119, 0.366);
 }
-
 .formations .tag2 {
   display: inline;
   color: blue;
   background-color: rgba(101, 101, 246, 0.374);
 }
-
 .formations .tag3 {
   display: inline;
   color: green;
   background-color: rgba(155, 218, 155, 0.349);
 }
-
 .formations p {
   max-width: 295px;
   word-wrap: break-word;
 }
-
 .formations .wrapper-images {
   max-width: 380px;
 }
-
 .wrapper-images img {
   border-radius: 6px;
 }
@@ -121,17 +114,11 @@ nav.navbar {
   height: 850px;
   background-color: #080808;
 }
-
-/* .section-competences .text-center {
-  padding-top: 80px;
-} */
-
 .wrapper-competence {
   display: flex;
   justify-content: space-around;
   margin-top: 80px;
 }
-
 .competences {
   max-width: 245px;
   height: 270px;
@@ -142,62 +129,94 @@ nav.navbar {
 }
 
 /* --- section réalisations --- */
+.wrapper-realisations {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.wrapper-realisations h3 {
+  margin-top: 10px;
+}
+.wrapper-realisations p {
+  max-width: 295px;
+  word-wrap: break-word;
+}
 .realisation .wrapper-images {
   max-width: 380px;
+}
+
+footer {
+  background-color: #2B2B2B;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .wrapper-footer {
+  width: 80%;
+  display: flex;
+  justify-content: end;
+}
+
+.wrapper-footer a {
+  margin-left: 15px;
 }
 
 @media (max-width: 768px) {
   .nomEtPhoto img {
     display: none;
   }
-
   .nomEtPhoto {
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
-
   .formations {
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin: 50px 0;
   }
-
   .formations p {
     max-width: 360px;
     word-wrap: break-word;
   }
-  
   .formations .wrapper-images {
     max-width: 360px;
   }
-
   .formation2 {
     display: flex;
     flex-direction: column-reverse;
   }
-
   .section-competences .text-center {
     padding: 40px 0;
   }
-
   .section-competences {
     height: fit-content;
     padding-bottom: 40px;
   }
-
   .wrapper-competence {
     flex-direction: column;
     align-items: center;
     gap: 10px;
     margin-top: 10px;
   }
-
   .wrapper-competence .competences {
     max-width: 360px;
     height: 200px;
   }
+
+  .wrapper-realisations {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .realisation .wrapper-images {
+    max-width: 360px;
+    margin-top: 40px;
+  }
+
 }
 
 @media (max-width: 992px) {
